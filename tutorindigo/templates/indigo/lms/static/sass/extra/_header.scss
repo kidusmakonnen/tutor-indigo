@@ -6,6 +6,7 @@ header.global-header {
     border: none;
     padding: 0;
     overflow: visible;
+    background-color: #15376D;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
     &:after {
         content: "";
@@ -42,7 +43,7 @@ header.global-header {
                     font-weight: 500;
                     line-height: 22px;
                     padding: 20px 0;
-                    color: $light-drak;
+                    color: $primary-light;
                     margin: 0 16px 0 0;
                     border-bottom: 2px solid transparent;
                     &.active, &:hover {

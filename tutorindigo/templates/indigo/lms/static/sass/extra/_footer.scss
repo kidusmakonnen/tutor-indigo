@@ -2,6 +2,7 @@
 .wrapper-footer {
     padding: 25px 0;
     border-top: 1px solid #E5E7EB;
+    background-color: #1D5392;
     @include media-breakpoint-up(md) {
         padding: 45px 0;
     }
@@ -95,6 +96,6 @@ footer.tutor-container {
         display: block;
         font-size: 12px;
         line-height: 16px;
-        color: $light-drak;
+        color: $primary-light;
     }
 }
