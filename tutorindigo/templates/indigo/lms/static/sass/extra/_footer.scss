@@ -4,7 +4,7 @@
     border-top: 1px solid #E5E7EB;
     background-color: #1D5392;
     @include media-breakpoint-up(md) {
-        padding: 45px 0;
+        padding: 48px 0;
     }
 }
 footer.tutor-container {
@@ -82,10 +82,10 @@ footer.tutor-container {
                     line-height: 24px;
                 }
                 a {
-                    color: $light-drak;
+                    color: $primary-light;
                     text-decoration: none;
                     &:hover {
-                        color: $drak;
+                        color: $primary;
                         text-decoration: none;
                     }
                 }
