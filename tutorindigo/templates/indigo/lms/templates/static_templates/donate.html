@@ -11,11 +11,22 @@
             <%block name="pageheader">${page_header or _("Donate")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">
+                ${page_content or _("Your generosity helps us continue to provide quality education and resources to learners and educators in the greater southern countries. With your support, we can expand our reach, develop new programs, and ensure that everyone has access to the tools they need to succeed.")}
+
+                ${page_content or _("<strong>Why Donate?</strong><br> Your donation makes a significant impact by helping us to:")}
+                ${page_content or _("<ul><li>Develop and improve our course offerings</li><li>Support educators with training and resources</li><li>Provide scholarships to underprivileged students</li><li>Enhance our technology and infrastructure</li></ul>")}
+
+                ${page_content or _("<strong>How to Donate</strong><br> Making a donation is simple and secure. You can donate through the following methods:")}
+                ${page_content or _("<ul><li><strong>Online:</strong> Use our secure online donation form to contribute with a credit or debit card.</li><li><strong>Bank Transfer:</strong> Contact us at gresedx@osc.int for bank transfer details.</li><li><strong>Mail:</strong> Send a check to our mailing address:<br>GreSEDX Donations<br>123 Education Lane<br>Learning City, LS 45678<br>Greater Southern Countries</li></ul>")}
+
+                ${page_content or _("Thank you for your support. Together, we can make a difference and create a brighter future through education. For any questions or additional information, please contact us at gresedx@osc.int.")}
+            </%block>
         </p>
         <!-- NEW IN INDIGO: add graphic image -->
         <div class="graphic-img">
-            <img src="${static.url('images/donate.svg')}" alt="Runs on Tutor" />
+            <img src="${static.url('images/donate.svg')}" alt="Donate" />
         </div>
     </section>
 </main>
+

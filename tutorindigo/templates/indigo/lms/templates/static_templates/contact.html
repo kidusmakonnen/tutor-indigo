@@ -11,11 +11,21 @@
             <%block name="pageheader">${page_header or _("Contact Us")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">
+                ${page_content or _("We're here to help! If you have any questions, concerns, or feedback, please don't hesitate to reach out to us. You can contact us through the following channels:")}
+
+                ${page_content or _("<strong>Email:</strong> For general inquiries, please email us at gresedx@osc.int")}
+
+                ${page_content or _("<strong>Address:</strong> If you prefer to write to us, you can send your correspondence to:<br>GreSEDX Support Team<br>Egypt St.,<br>Lideta Sub-City, Woreda 04, House N° 1986, 1165<br>Addis Ababa, Ethiopia")}
+
+                ${page_content or _("We strive to respond to all inquiries within 24 hours. For more immediate assistance, please visit our Help Center or check our FAQ section for common questions and answers.")}
+
+                ${page_content or _("Thank you for choosing GreSEDX. We look forward to assisting you!")}
+            </%block>
         </p>
         <!-- NEW IN INDIGO: add graphic image -->
         <div class="graphic-img">
-            <img src="${static.url('images/contact.svg')}" alt="Runs on Tutor" />
+            <img src="${static.url('images/contact.svg')}" alt="Contact Us" />
         </div>
     </section>
 </main>

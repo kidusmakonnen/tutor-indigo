@@ -8,10 +8,24 @@
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>
-            <%block name="pageheader">${page_header or _("About")}</%block>
+            <%block name="pageheader">${page_header or _("About GreSEDX")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">
+                ${page_content or _("Welcome to GreSEDX, the leading Learning Management System (LMS) dedicated to empowering learners and educators in the greater southern countries. At GreSEDX, we believe in the transformative power of education and strive to bridge the educational gaps with innovative technology, fostering growth, and nurturing potential across borders.")}
+
+                ${page_content or _("GreSEDX is a dynamic platform designed to cater to the diverse educational needs of our region. Our mission is to create an inclusive, accessible, and engaging learning environment that transcends traditional classroom boundaries, bringing quality education to every corner of the greater southern countries.")}
+
+                ${page_content or _("Our platform offers a comprehensive suite of tools and resources to support both learners and educators. With interactive courses, personalized learning paths, and real-time analytics, GreSEDX is equipped to enhance the learning experience and drive academic success. We collaborate with top institutions and educators to provide a wide range of courses, from foundational skills to advanced professional development.")}
+
+                ${page_content or _("At GreSEDX, we are committed to sustainability and community development. Our initiatives include localized content, partnerships with regional experts, and support for multilingual education. We understand the unique challenges and opportunities in our region, and we are dedicated to creating solutions that are relevant and impactful.")}
+
+                ${page_content or _("Join us on this educational journey and be part of a vibrant community dedicated to lifelong learning. Whether you are a student, educator, or lifelong learner, GreSEDX is here to support your educational aspirations and help you achieve your goals. Together, we can create a brighter future through the power of education.")}
+
+                ${page_content or _("Discover more about our programs and initiatives by exploring our platform. Welcome to GreSEDX, where education knows no boundaries and every learner can thrive.")}
+
+                ${page_content or _("GreSEDX: Learning for a Greater Southern Future.")}
+            </%block>
         </p>
         <!-- NEW IN INDIGO: add graphic image -->
         <div class="graphic-img">
@@ -19,3 +33,4 @@
         </div>
     </section>
 </main>
+

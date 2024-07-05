@@ -11,11 +11,17 @@
             <%block name="pageheader">${page_header or _("Blog")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">
+                ${page_content or _("Welcome to the GreSEDX Blog! Here, we share the latest news, insights, and stories from the world of education and e-learning. Stay informed and inspired with our diverse range of articles, written by experts and passionate educators from across the greater southern countries.")}
+
+                ${page_content or _("Explore our recent posts below and join the conversation by leaving your comments and sharing your thoughts. We believe in the power of community and look forward to hearing from you.")}
+
+                ${page_content or _("If you have a story to share or a topic you would like us to cover, please reach out to us at gresedx@osc.int. Happy reading!")}
+            </%block>
         </p>
         <!-- NEW IN INDIGO: add graphic image -->
         <div class="graphic-img">
-            <img src="${static.url('images/blog.svg')}" alt="Runs on Tutor" />
+            <img src="${static.url('images/blog.svg')}" alt="Blog" />
         </div>
     </section>
 </main>

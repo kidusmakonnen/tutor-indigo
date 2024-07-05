@@ -13,11 +13,28 @@
             <%block name="pageheader">${page_header or _("Privacy Policy")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">
+                ${page_content or _("At GreSEDX, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your data.")}
+
+                ${page_content or _("<strong>Information We Collect</strong><br> We collect personal information that you provide to us directly when you create an account, enroll in courses, or communicate with us. This may include your name, email address, contact information, and payment details. We also collect information automatically through your use of our services, such as IP addresses, browser types, and usage data.")}
+
+                ${page_content or _("<strong>How We Use Your Information</strong><br> We use your information to provide, maintain, and improve our services. This includes processing your enrollments, providing customer support, and sending you updates and promotional materials. We may also use your information for research and analytics purposes to better understand our users and enhance our offerings.")}
+
+                ${page_content or _("<strong>Sharing Your Information</strong><br> We do not share your personal information with third parties except as necessary to provide our services, comply with the law, or protect our rights. This may include sharing information with service providers who assist us in operating our platform, processing payments, or conducting business activities.")}
+
+                ${page_content or _("<strong>Data Security</strong><br> We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, loss, or misuse. However, no system can be completely secure, and we cannot guarantee the absolute security of your data.")}
+
+                ${page_content or _("<strong>Your Rights</strong><br> You have the right to access, update, or delete your personal information. You can manage your account settings or contact us directly to make changes. If you have any questions or concerns about your privacy, please contact our support team at privacy@greedx.org.")}
+
+                ${page_content or _("<strong>Changes to This Policy</strong><br> We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any significant changes by posting the new policy on our website and updating the effective date.")}
+
+                ${page_content or _("Thank you for trusting GreSEDX with your personal information. We are committed to safeguarding your privacy and providing a secure and transparent learning environment.")}
+            </%block>
         </p>
         <!-- NEW IN INDIGO: add graphic image -->
         <div class="graphic-img">
-            <img src="${static.url('images/privacy.svg')}" alt="Runs on Tutor" />
+            <img src="${static.url('images/privacy.svg')}" alt="Privacy Policy" />
         </div>
     </section>
 </main>
+
